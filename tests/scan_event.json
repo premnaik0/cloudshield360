@@ -1,0 +1,8 @@
+{
+  "detail-type": "Object Created",
+  "source": "aws.s3",
+  "detail": {
+    "bucket": { "name": "REPLACE_WITH_DATA_BUCKET_NAME" },
+    "object": { "key": "setup.exe", "size": 12 }
+  }
+}

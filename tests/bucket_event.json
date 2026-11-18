@@ -1,0 +1,11 @@
+{
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "detail": {
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "DeleteBucketPolicy",
+    "sourceIPAddress": "203.0.113.10",
+    "requestParameters": { "bucketName": "REPLACE_WITH_DATA_BUCKET_NAME" },
+    "userIdentity": { "type": "IAMUser", "userName": "test-attacker" }
+  }
+}

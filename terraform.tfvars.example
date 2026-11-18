@@ -1,0 +1,22 @@
+alert_email    = "premnaik400@gmail.com"
+primary_region = "ap-south-1"
+dr_region      = "ap-southeast-1"
+
+# Demo-friendly values
+retention_days                 = 7
+vault_lock_changeable_for_days = 3
+
+# Segmentation and containment
+containment_mode     = "enforce" # use "dry_run" to only get alerts first
+protected_principals = []        # add admin user or role names that must never be auto-isolated
+blocked_cidrs        = []        # e.g. ["203.0.113.7/32"]
+
+# Set false if the account already has an Access Analyzer
+enable_access_analyzer = true
+
+# EC2 app tier and network segmentation
+vpc_cidr             = "10.0.0.0/16"
+instance_type        = "t3.micro"
+asg_desired_capacity = 2
+alb_ingress_cidrs    = ["0.0.0.0/0"] # narrow to your own IP, for example ["203.0.113.7/32"]
+alb_certificate_arn  = null          # set an ACM certificate ARN to enable HTTPS

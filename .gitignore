@@ -1,0 +1,21 @@
+@'
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+tfplan
+*.tfplan
+terraform.tfvars
+*.auto.tfvars
+build/
+__pycache__/
+out.json
+demo-policy.json
+tamper-policy.json
+secret.txt
+setup.exe
+eicar*.txt
+*.pem
+*.key
+.env
+'@ | Set-Content .gitignore
